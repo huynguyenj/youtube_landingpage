@@ -1,6 +1,7 @@
 import './App.css';
 import VideoCard from "./components/VideoCard";
 import AdBanner from "./components/AdBanner";
+import DropdownProfile from './components/DropdownProfile';
 
 // Dynamically import all images in the 'pictures' folder
 const thumbnails = import.meta.glob('./assets/images/thumbnails/*.jpg', { eager: true }) as Record<
@@ -19,7 +20,9 @@ const bannerPath = Object.values(banners)[0].default;
 function App() {
 
   return (
+    
     <>
+    <DropdownProfile/>
     <div className="ad-banner">
       <AdBanner bannerSource={bannerPath}/>
     </div>

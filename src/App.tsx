@@ -16,7 +16,7 @@ function App() {
     <>
     <div className='videos-container'>
       {imagePaths.map((src, index) => (
-        <VideoCard key={index} thumbnail={src}/>    
+        <VideoCard key={index} thumbnail={src}/>
       ))}
     </div>
 

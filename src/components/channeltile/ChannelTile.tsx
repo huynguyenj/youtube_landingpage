@@ -1,4 +1,3 @@
-import React from 'react'
 import "ChannelTile.css"
 import { NotificationsActive } from '@mui/icons-material'
 

@@ -1,8 +1,19 @@
 import { MoreVert, PlaylistAdd, WatchLater } from '@mui/icons-material'
 import React from 'react'
-import "VideoTile.css"
+import '../videotile/VideoTile.css'
 
-function VideoTile(props) {
+interface VideoTileProps {
+    thumbnail: string;
+    duration: string;
+    title: string;
+    views: string;
+    time: string;
+    img: string;
+    name: string;
+    desc: string;
+}
+
+function VideoTile(props: VideoTileProps) {
     return (
         <div className='videoTile'>
             <div className='image_div'>

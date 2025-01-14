@@ -1,6 +1,7 @@
 import './App.css';
-import Header from './components'
+import Header from './components/Header'
 import VideoCard from "./components/VideoCard";
+import './Header.css'
 
 // Dynamically import all images in the 'pictures' folder
 const images = import.meta.glob('./assets/images/thumbnails/*.jpg', { eager: true }) as Record<

@@ -37,7 +37,7 @@
     border: none;
     padding: 8px 15px;
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     outline: none;
 }
 
@@ -65,7 +65,7 @@
 }
 .SearchInput {
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     padding: 8px;
     border-radius: 20px;
     border: 1px solid #ccc;
@@ -73,7 +73,7 @@
 }
 
 .SearchInput:focus {
-    max-width: 500px;
+    max-width: 600px;
     box-shadow: 0 1px 6px rgba(32,33,36,0.28);
     outline: none;
 }

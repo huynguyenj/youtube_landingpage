@@ -23,12 +23,13 @@ const Header: React.FC = () => {
                         placeholder="Search" 
                         type="text"
                         onFocus={(e) => {
-                            e.currentTarget.style.maxWidth = '500px';
+                            e.currentTarget.style.width = '415px';
+                            e.currentTarget.style.maxWidth = '600px';
                             e.currentTarget.style.boxShadow = '0 1px 6px rgba(32,33,36,0.28)';
                             e.currentTarget.style.transform = 'scale(1.05)';
                         }}
                         onBlur={(e) => {
-                            e.currentTarget.style.maxWidth = '400px';
+                            e.currentTarget.style.maxWidth = '500px';
                             e.currentTarget.style.boxShadow = 'none';
                             e.currentTarget.style.transform = 'scale(1)';
                         }}

@@ -1,33 +1,7 @@
 
-.videos-container {
-      display: grid;
-      justify-items: center;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-      gap: 3rem;
-      padding: 1rem 3rem;
-}
 
-.sidebar{
-      width: 220px;
-      position: sticky;
-      overflow-y: hidden;
-      overflow-x: hidden;
-      height: 100vh;
-      scrollbar-gutter: stable;
-}
-
-.sidebar:hover{
-      overflow-y: scroll;
-}
-.sidebar::-webkit-scrollbar{
-      width: 0.5rem;
-}
-.sidebar::-webkit-scrollbar-thumb{
-      background-color: hsl(0 0% 100%/0.5);
-}
-.sidebar hr{
-            height: 1px;
-            border: none;
-            background: lightgray;
-            margin: 10px;
-}
+/* 
+.app{
+      display: flex;
+      flex-direction: column;
+} */

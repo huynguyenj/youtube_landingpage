@@ -1,21 +1,31 @@
 import './App.css';
 import VideoCard from "./components/VideoCard";
+import AdBanner from "./components/AdBanner";
 
 // Dynamically import all images in the 'pictures' folder
-const images = import.meta.glob('./assets/images/thumbnails/*.jpg', { eager: true }) as Record<
+const thumbnails = import.meta.glob('./assets/images/thumbnails/*.jpg', { eager: true }) as Record<
+string,
+{ default: string }
+>;
+const banners = import.meta.glob('./assets/images/banners/*.png', { eager: true }) as Record<
 string,
 { default: string }
 >;
 
 // Extract the image paths
-const imagePaths = Object.values(images).map((img) => img.default);
+const thumbnailPaths = Object.values(thumbnails).map((img) => img.default);
+const bannerPath = Object.values(banners)[0].default;
 
 function App() {
 
   return (
     <>
+    <div className="ad-banner">
+      <AdBanner bannerSource={bannerPath}/>
+    </div>
+
     <div className='videos-container'>
-      {imagePaths.map((src, index) => (
+      {thumbnailPaths.map((src, index) => (
         <VideoCard key={index} thumbnail={src}/>
       ))}
     </div>

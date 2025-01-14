@@ -1,0 +1,30 @@
+:root{
+      --sidebar_bbg: #0F0F0F;
+      --sidebar_wbg:#fff;
+      --front-clr:#fff;
+      --hover-icon:#272727;
+}
+.sidebar_row{
+      display: flex;
+      align-items: center;
+      background: var(--sidebar_bbg);
+      padding: 10px 12px;
+      aspect-ratio: 5/1;
+      width: clamp(10rem,13vw,18rem);
+      min-height: 0;
+      gap: 15px;
+      color: var(--front-clr);
+      font-size: clamp(0.35rem,0.6vw,1rem);
+      margin: 8px 0;
+      transition: 0.2s ease;
+      cursor: pointer;
+      h2{
+            font-weight: 500;
+            background: none;
+      }
+}
+.sidebar_row:hover{
+      background: var(--hover-icon);
+      border-radius: 10px;
+      opacity: 0.8;
+}

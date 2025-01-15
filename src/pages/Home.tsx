@@ -1,4 +1,3 @@
-import React from "react";
 import VideoCard from "../components/VideoCard";
 import "../pages/Home.css";
 import AdBanner from "../components/AdBanner";

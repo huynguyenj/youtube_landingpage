@@ -1,5 +1,5 @@
 import React from 'react'
-import '../components/Tag.css'
+import './Tag.css'
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
 
 const slideIconStyle:React.CSSProperties = {

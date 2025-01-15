@@ -1,5 +1,5 @@
 
-import "../components/AdBanner.css";
+import "./AdBanner.css";
 
 
 interface AdBannerProps {

@@ -1,4 +1,4 @@
-import '../sidebar/sidebar.css'
+import './Sidebar.css'
 function Sidebar({isBigTitle,Icon,title} : {isBigTitle:boolean, Icon:React.ElementType | null,title:string}) {
   return (
     <div className='sidebar_row'>

@@ -28,7 +28,7 @@ import ThumbUpOutlinedIcon from "@mui/icons-material/ThumbUpOutlined";
 import WatchLaterOutlinedIcon from "@mui/icons-material/WatchLaterOutlined";
 import ArrowForwardIosOutlinedIcon from "@mui/icons-material/ArrowForwardIosOutlined";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
-import '../components/Header.css'
+import './Header.css'
 import DropdownProfile from "./DropdownProfile";
 import { Link } from "react-router-dom"
 

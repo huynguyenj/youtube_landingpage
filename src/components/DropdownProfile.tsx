@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect, useRef } from 'react';
-import '../components/DropdownProfile.css';
+import './DropdownProfile.css';
 import GoogleIcon from '@mui/icons-material/Google';
 import SwitchAccountIcon from '@mui/icons-material/SwitchAccount';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';

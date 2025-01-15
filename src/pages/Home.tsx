@@ -1,5 +1,5 @@
 import VideoCard from "../components/VideoCard";
-import "../pages/Home.css";
+import "./Home.css";
 import AdBanner from "../components/AdBanner";
 import "../assets/banners/banner-adplaceholder.png";
 import Tag from "../components/Tag";

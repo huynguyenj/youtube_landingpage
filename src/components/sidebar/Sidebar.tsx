@@ -1,7 +1,4 @@
-import React from 'react'
 import '../sidebar/sidebar.css'
-
-
 function Sidebar({isBigTitle,Icon,title} : {isBigTitle:boolean, Icon:React.ElementType | null,title:string}) {
   return (
     <div className='sidebar_row'>

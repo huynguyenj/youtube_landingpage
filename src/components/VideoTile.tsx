@@ -25,7 +25,7 @@ const VideoTile: React.FC<VideoTileProps> = (props) => {
                     <PlaylistAdd className='videoIcon' />
                 </div>
 
-                <img className='thumbnail' src={props.thumbnail} />
+                <img className='thumbnail' src={props.thumbnail} alt='img' />
 
                 <div className='duration'>
                     {props.duration}
@@ -43,7 +43,7 @@ const VideoTile: React.FC<VideoTileProps> = (props) => {
                 </p>
 
                 <div className='data'>
-                    <img src={props.img} />
+                    <img src={props.img} alt='img' />
                     <p>{props.name}</p>
                 </div>
 

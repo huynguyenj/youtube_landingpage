@@ -1,8 +1,6 @@
 .ad-image {
-      margin-left: 16rem;
-      width: 79%;
+      width: clamp(10rem,60vw,70rem);
       height: 100%;
-
 }
 
 

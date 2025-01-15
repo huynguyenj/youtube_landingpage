@@ -15,6 +15,7 @@
       z-index: 50;
       margin-bottom: 20px;
       scroll-behavior: smooth;
+      font-size: clamp(0.2rem,1vw,1.2rem);
 }
 .miniTag{
       display: flex;

@@ -1,7 +1,9 @@
 .searchPage {
     margin-left: 16%;
     background-color: #0F0F0F;
-    padding: 80px 180px;
+    width: auto;
+    padding: 0 20px;
+
 }
 
 .filter {

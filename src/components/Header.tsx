@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 import VideoCallIcon from "@mui/icons-material/VideoCall";
@@ -45,7 +45,9 @@ const Header: React.FC = () => {
     setIsOpen(!isOpen);
     console.log(isOpen)
   }
-  // window.addEventListener('resize',toggleMenu);
+  useEffect(()=>{
+    window.addEventListener('resize',toggleMenu);
+  },[])
   return (
     <div className="parrent-header">
       <div className="header">
@@ -78,7 +80,7 @@ const Header: React.FC = () => {
               }}
             />
             <Link to={`/search/${searchVal}`}>
-              <SearchIcon sx={{ color: "white" }}
+              <SearchIcon sx={{ color: "white",width:'50px',display:'flex',alignItems:'center' }}
                 className="header_searchBtn" />
             </Link>
           </div>

@@ -1,6 +1,10 @@
 .videoTile {
     display: flex;
+    /* width: 100%; */
+    flex-direction: row;
+    width: 1100px;
     margin-bottom: 20px;
+    overflow: hidden;
 }
 
 .image_div {
@@ -9,6 +13,7 @@
     position: relative;
     margin-right: 20px;
     cursor: pointer;
+
 }
 
 .thumbnail {
@@ -65,7 +70,6 @@
     display: flex;
     align-items: center;
     font-size: 14px;
-    color rgb(94,94,94);
     cursor: pointer;
     padding: 3px 0;
 }

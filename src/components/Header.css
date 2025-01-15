@@ -92,10 +92,9 @@
 }
 
 .header_searchBtn{
-    width: 20% !important;
     background-color: #fafafa;
     border-left: 1px solid lightgray;
-    color: gray;
+    color: var(--front-clr);
 }
 
 .sidebar{

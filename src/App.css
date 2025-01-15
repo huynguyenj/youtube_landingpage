@@ -1,24 +1,4 @@
-.sidebar{
-      width: 220px;
-      position: sticky;
-      overflow-y: hidden;
-      overflow-x: hidden;
-      height: 100vh;
-      scrollbar-gutter: stable;
-}
 
-.sidebar:hover{
-      overflow-y: scroll;
-}
-.sidebar::-webkit-scrollbar{
-      width: 0.5rem;
-}
-.sidebar::-webkit-scrollbar-thumb{
-      background-color: hsl(0 0% 100%/0.5);
-}
-.sidebar hr{
-            height: 1px;
-            border: none;
-            background: lightgray;
-            margin: 10px;
+.app{
+      color: white;
 }

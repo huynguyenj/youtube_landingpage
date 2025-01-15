@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useRef } from 'react';
 import '../components/DropdownProfile.css';
 import GoogleIcon from '@mui/icons-material/Google';
@@ -51,6 +52,7 @@ function DropdownProfile() {
             <div className="user-info">
               <span className="user-name">Nhóm 4</span>
               <a href="/channel" className="user-email">@123@gmail.com</a>
+
               <a href="/channel" className="view-channel">Xem kênh</a>
             </div>
           </div>
@@ -73,6 +75,8 @@ function DropdownProfile() {
             <a href="/settings"><SettingsOutlinedIcon sx={{...styleIcon}}/>Cài đặt</a>
             <a href="/help"><HelpOutlineOutlinedIcon sx={{...styleIcon}}/>Trợ giúp</a>
             <a href="/feedback"><AnnouncementOutlinedIcon sx={{...styleIcon}}/>Gửi ý kiến phản hồi</a>
+
+         
           </div>
         </div>
       )}
@@ -81,3 +85,4 @@ function DropdownProfile() {
 }
 
 export default DropdownProfile;
+

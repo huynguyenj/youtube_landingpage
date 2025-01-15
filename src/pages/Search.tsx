@@ -1,4 +1,3 @@
-import React from 'react'
 import './Search.css'
 import { TuneOutlined } from '@mui/icons-material'
 import ChannelTile from '../components/ChannelTile'

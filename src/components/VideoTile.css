@@ -1,6 +1,5 @@
 .videoTile {
     display: flex;
-    /* width: 100%; */
     flex-direction: row;
     width: 1100px;
     margin-bottom: 20px;
@@ -43,7 +42,7 @@
     color: #ffffff;
     border-radius: 3px;
     position: absolute;
-    bottom: 5px; /* Changed from top to bottom */
+    bottom: 5px;
     right: 3px;
     font-size: 12px;
     font-weight: 600;
@@ -125,4 +124,51 @@
 
 .videoTile:hover .watchLater {
     display: flex;
+}
+@media (max-width: 768px) {
+    .videoTile {
+        flex-direction: column;
+        width: 100%; 
+    }
+
+    .image_div {
+        height: 180px;
+        width: 100%; 
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .thumbnail {
+        height: 180px;
+        width: 100%;
+        object-fit: cover; 
+    }
+
+    .title_div {
+        font-size: 16px;
+        line-height: 22px;
+        flex-wrap: wrap; 
+    }
+
+    .vertBtn {
+        margin-left: 0!important; 
+        margin-top: 10px;
+    }
+
+    .views,
+    .desc {
+        font-size: 12px;
+    }
+
+    .data img {
+        height: 25px;
+        width: 25px;
+        margin-right: 8px;
+    }
+
+    .watchLater,
+    .playlistAdd {
+        font-size: 16px!important;
+        padding: 3px;
+    }
 }

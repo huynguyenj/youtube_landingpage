@@ -28,31 +28,41 @@ import ThumbUpOutlinedIcon from "@mui/icons-material/ThumbUpOutlined";
 import WatchLaterOutlinedIcon from "@mui/icons-material/WatchLaterOutlined";
 import ArrowForwardIosOutlinedIcon from "@mui/icons-material/ArrowForwardIosOutlined";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
-import './Header.css'
+import "./Header.css";
 import DropdownProfile from "./DropdownProfile";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 const style: React.CSSProperties = {
-  color: 'white',
-  cursor: 'pointer'
-}
+  color: "white",
+  cursor: "pointer",
+};
 const Header: React.FC = () => {
-
-  const [searchVal, setSearchVal] = useState("")
+  const [searchVal, setSearchVal] = useState("");
 
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const toggleMenu = (): void => {
-    setIsOpen(!isOpen);
-    console.log(isOpen)
-  }
-  useEffect(()=>{
-    window.addEventListener('resize',toggleMenu);
-  },[])
+    setIsOpen((prev) => !prev);
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768 && isOpen) {
+        setIsOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [isOpen]);
   return (
     <div className="parrent-header">
       <div className="header">
         <div className="header__left">
-          <div onClick={toggleMenu}><MenuIcon sx={{ color: "white", marginLeft: '14px' }} /></div>
+          <div onClick={toggleMenu}>
+            <MenuIcon sx={{ color: "white", marginLeft: "14px" }} />
+          </div>
           <Link to={`/`}>
             <img src={image} style={{ width: "100px" }} alt="youtube img" />
           </Link>
@@ -80,8 +90,15 @@ const Header: React.FC = () => {
               }}
             />
             <Link to={`/search/${searchVal}`}>
-              <SearchIcon sx={{ color: "white",width:'50px',display:'flex',alignItems:'center' }}
-                className="header_searchBtn" />
+              <SearchIcon
+                sx={{
+                  color: "white",
+                  width: "50px",
+                  display: "flex",
+                  alignItems: "center",
+                }}
+                className="header_searchBtn"
+              />
             </Link>
           </div>
           <MicIcon
@@ -101,8 +118,8 @@ const Header: React.FC = () => {
           <DropdownProfile />
         </div>
       </div>
-      {
-        !isOpen ? (<div className="sidebar">
+      {!isOpen ? (
+        <div className={`sidebar ${isOpen ? "active" : ""}`}>
           <Sidebar isBigTitle={false} Icon={HomeIcon} title="Trang chủ" />
           <Sidebar
             isBigTitle={false}
@@ -221,29 +238,28 @@ const Header: React.FC = () => {
             Thử các tính năng mới <br />
             <span>© 2025 Google LLC</span>
           </p>
-        </div>) :
-          (<div className="sidebar_mini">
-            <div className="content_miniSidebar">
-              <HomeIcon sx={{ background: 'none' }} />
-              <h2>Trang chủ</h2>
-            </div>
-            <div className="content_miniSidebar">
-              <SlideshowOutlinedIcon sx={{ background: 'none' }} />
-              <h2>Shorts</h2>
-            </div>
-            <div className="content_miniSidebar">
-              <SubscriptionsOutlinedIcon sx={{ background: 'none' }} />
-              <h2>Kênh đăng ký</h2>
-            </div>
-            <div className="content_miniSidebar">
-              <AccountCircleOutlinedIcon sx={{ background: 'none' }} />
-              <h2>Trang chủ</h2>
-            </div>
-          </div>)
-      }
-
-
-    </div >
+        </div>
+      ) : (
+        <div className="sidebar_mini">
+          <div className="content_miniSidebar">
+            <HomeIcon sx={{ background: "none" }} />
+            <h2>Trang chủ</h2>
+          </div>
+          <div className="content_miniSidebar">
+            <SlideshowOutlinedIcon sx={{ background: "none" }} />
+            <h2>Shorts</h2>
+          </div>
+          <div className="content_miniSidebar">
+            <SubscriptionsOutlinedIcon sx={{ background: "none" }} />
+            <h2>Kênh đăng ký</h2>
+          </div>
+          <div className="content_miniSidebar">
+            <AccountCircleOutlinedIcon sx={{ background: "none" }} />
+            <h2>Trang chủ</h2>
+          </div>
+        </div>
+      )}
+    </div>
   );
 };
 

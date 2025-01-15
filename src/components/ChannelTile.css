@@ -54,34 +54,54 @@
     background-color: #282828;
 }
 
-/* Media Queries for Responsiveness */
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .channelTile {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 2fr 1fr; /* Hiển thị đủ 3 cột */
+        gap: 10px; 
+        padding: 15px 10px;
+        align-items: center;
     }
 
-    .tile_left, .tile_middle {
-        padding: 0 10px;
+    .tile_left {
+        justify-content: flex-start; 
+        padding: 0;
+    }
+
+    .tile_middle {
+        padding: 0 10px; 
     }
 
     .tile_right {
-        display: none;
+        display: flex;
+        justify-content: flex-end;
     }
 
     .channelImg {
-        width: 60px;
-        height: 60px;
-    }
-
-    .subscribe {
-        padding: 8px 12px;
-        font-size: 12px;
+        width: 70px;
+        height: 70px;
+        margin-left: 0; 
     }
 
     .channelName {
-        font-size: 16px;
+        font-size: 16px; 
+    }
+
+    .subscribe {
+        padding: 8px 12px; 
+        font-size: 14px;
+        color: white;
+        border-radius: 999px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .bellIcon,
+    .dropdownIcon {
+        margin-right: 5px;
+        font-size: 14px; 
     }
 }
+
 
 @media only screen and (max-width: 480px) {
     .channelTile {

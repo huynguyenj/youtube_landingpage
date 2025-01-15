@@ -1,18 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-*{
-    font-family: "Roboto", serif;
-}
-.videos-container {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Automatically adjust the columns*/
-    gap: 3rem;
-    margin-top: 8rem;
-    padding: 1rem 3rem;
-}
 
-.ad-banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.app{
+      color: white;
 }

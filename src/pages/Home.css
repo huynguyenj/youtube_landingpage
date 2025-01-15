@@ -1,0 +1,29 @@
+.home-container{
+      margin: 70px 0 0 0;
+      position: relative;
+      overflow: hidden;
+}
+.tag-container{
+      margin-left: 20%
+}
+.home_page{
+      top: 20px;
+      margin-left:16%;
+      top: 0;
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      padding: 1rem 2rem;
+}
+.ad-banner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+/* .videos-container {
+      display: grid;
+      justify-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 3rem;
+      padding: 1rem 3rem;
+} */

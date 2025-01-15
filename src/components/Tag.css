@@ -1,0 +1,40 @@
+:root{
+      --sidebar_bbg: #0F0F0F;
+      --sidebar_wbg:#fff;
+      --front-clr:#fff;
+      --span-clr:#6D7171;
+      --hover-icon:#272727;
+  }
+.tags{
+      position: sticky;
+      width: 150%;
+      height: 60px;
+      display: flex;
+      background: transparent;
+      align-items: center;
+      z-index: 50;
+      margin-bottom: 20px;
+      scroll-behavior: smooth;
+}
+.miniTag{
+      display: flex;
+      align-items: center;
+      width: fit-content;
+      margin-left: 10px;
+      background-color: var(--hover-icon);
+      height: 30px;
+      border-radius: 14px;
+      padding: 10px 20px;
+      cursor: pointer;
+}
+/* .slide-icon{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      right: 33%;
+      height: 100px;
+      width: 100px;
+      mask: linear-gradient(90deg, transparent,white 45%, white 100%, transparent);
+      -webkit-mask: linear-gradient(90deg,transparent,white 45%, white 100%, transparent);
+} */

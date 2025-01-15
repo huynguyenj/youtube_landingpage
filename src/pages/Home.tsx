@@ -21,7 +21,7 @@ function Home() {
     <>
       <div className="home-container">
         <div className="tag-container">
-          <Tag/>
+          <Tag />
         </div>
         <div className="ad-banner">
           <AdBanner bannerSource={bannerPath} />

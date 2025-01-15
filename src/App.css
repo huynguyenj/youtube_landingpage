@@ -1,4 +1,10 @@
-
+:root{
+      --sidebar_bbg: #0F0F0F;
+      --sidebar_wbg:#fff;
+      --front-clr:#fff;
+      --span-clr:#6D7171;
+      --hover-icon:#272727;
+  }
 .app{
-      color: white;
+      color: var(--front-clr);
 }

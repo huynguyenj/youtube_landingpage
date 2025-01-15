@@ -1,0 +1,33 @@
+.searchPage {
+    margin-left: 16%;
+    background-color: #0F0F0F;
+    width: auto;
+    padding: 0 20px;
+
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #0F0F0F;
+    margin-bottom: 30px;
+    background-color: #0F0F0F;
+}
+
+.filterIcon {
+    margin-right: 5px;
+    color: #ffffff!important
+}
+
+.filterHeading {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+h4 {
+    color: white;
+    font-weight: 500;
+    padding: 20px 0;
+}
+

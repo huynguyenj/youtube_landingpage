@@ -1,5 +1,10 @@
 .home-container{
       margin: 70px 0 0 0;
+      position: relative;
+      overflow: hidden;
+}
+.tag-container{
+      margin-left: 20%
 }
 .home_page{
       top: 20px;

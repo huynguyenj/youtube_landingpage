@@ -3,6 +3,7 @@ import VideoCard from "../components/VideoCard";
 import "../pages/Home.css";
 import AdBanner from "../components/AdBanner";
 import "../assets/banners/banner-adplaceholder.png";
+import Tag from "../components/Tag";
 // Dynamically import all images in the 'pictures' folder
 const thumbnails = import.meta.glob("../assets/images/thumbnails/*.jpg", {
   eager: true,
@@ -19,6 +20,9 @@ function Home() {
   return (
     <>
       <div className="home-container">
+        <div className="tag-container">
+          <Tag/>
+        </div>
         <div className="ad-banner">
           <AdBanner bannerSource={bannerPath} />
         </div>

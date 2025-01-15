@@ -1,11 +1,10 @@
-import React, { useEffect, useReducer, useState } from "react";
+import React, { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 import VideoCallIcon from "@mui/icons-material/VideoCall";
 import AppsIcon from "@mui/icons-material/Apps";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import MicIcon from "@mui/icons-material/Mic";
-import { Avatar } from "@mui/material";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import image from "../assets/Youtube_Icon_-_Download_Free_Vector_PNG-removebg-preview.png";
 import Sidebar from "./sidebar/Sidebar";
@@ -29,8 +28,9 @@ import ThumbUpOutlinedIcon from "@mui/icons-material/ThumbUpOutlined";
 import WatchLaterOutlinedIcon from "@mui/icons-material/WatchLaterOutlined";
 import ArrowForwardIosOutlinedIcon from "@mui/icons-material/ArrowForwardIosOutlined";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
-
-const style = {
+import '../components/Header.css'
+import DropdownProfile from "./DropdownProfile";
+const style:React.CSSProperties = {
     color:'white',
     cursor:'pointer'
 }
@@ -40,7 +40,7 @@ const Header: React.FC = () => {
         setIsOpen(!isOpen);
         console.log(isOpen)
     }
-    
+    // window.addEventListener('resize',toggleMenu);
   return (
     <div className="parrent-header">
       <div className="header">
@@ -84,9 +84,7 @@ const Header: React.FC = () => {
           <VideoCallIcon sx={{...style }} />
           <AppsIcon sx={{...style}} />
           <NotificationsIcon sx={{...style}} />
-          <Avatar
-            sx={{...style, background: "none"}}
-          />
+          <DropdownProfile/>
         </div>
       </div>
       {!isOpen ? (<div className="sidebar">

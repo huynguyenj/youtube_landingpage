@@ -1,5 +1,5 @@
 import "./VideoCard.css";
-import { MoreVert, PlaylistAdd, WatchLater } from "@mui/icons-material";
+import { MoreVert } from "@mui/icons-material";
 import { Avatar } from "@mui/material";
 import AvatarImage from "../assets/images/video_card/avatar.jpg";
 

@@ -1,7 +1,7 @@
 import "./ChannelTile.css";
 import { ArrowDropDown, NotificationsActive } from '@mui/icons-material';
 import React from 'react';
-import fleekazoid from '../assets/images/channel/FLEEKAZOID.png'
+import fleekazoid from '../../assets/images/channel/FLEEKAZOID.png'
 
 const ChannelTile: React.FC = () => {
     return (

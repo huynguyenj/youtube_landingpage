@@ -6,8 +6,8 @@ import AppsIcon from "@mui/icons-material/Apps";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import MicIcon from "@mui/icons-material/Mic";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-import image from "../assets/youtube.png";
-import Sidebar from "./sidebar/Sidebar";
+import image from "../../assets/youtube.png";
+import Sidebar from "../sidebar/Sidebar";
 import SlideshowOutlinedIcon from "@mui/icons-material/SlideshowOutlined";
 import HomeIcon from "@mui/icons-material/Home";
 import SubscriptionsOutlinedIcon from "@mui/icons-material/SubscriptionsOutlined";
@@ -29,7 +29,7 @@ import WatchLaterOutlinedIcon from "@mui/icons-material/WatchLaterOutlined";
 import ArrowForwardIosOutlinedIcon from "@mui/icons-material/ArrowForwardIosOutlined";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 import './Header.css'
-import DropdownProfile from "./DropdownProfile";
+import DropdownProfile from "../dropdownProfile/DropdownProfile";
 import { Link } from "react-router-dom"
 
 const style: React.CSSProperties = {

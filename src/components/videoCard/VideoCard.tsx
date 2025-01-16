@@ -1,7 +1,7 @@
 import "./VideoCard.css";
 import { MoreVert } from "@mui/icons-material";
 import { Avatar } from "@mui/material";
-import AvatarImage from "../assets/images/video_card/avatar.jpg";
+import AvatarImage from "../../assets/images/video_card/avatar.jpg";
 
 interface VideoCardProps {
   thumbnail: string;

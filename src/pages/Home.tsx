@@ -1,8 +1,8 @@
-import VideoCard from "../components/VideoCard";
+import VideoCard from "../components/videoCard/VideoCard";
 import "./Home.css";
-import AdBanner from "../components/AdBanner";
+import AdBanner from "../components/addBanner/AdBanner";
 import "../assets/banners/banner-adplaceholder.png";
-import Tag from "../components/Tag";
+import Tag from "../components/tags/Tag";
 // Dynamically import all images in the 'pictures' folder
 const thumbnails = import.meta.glob("../assets/images/thumbnails/*.jpg", {
   eager: true,
